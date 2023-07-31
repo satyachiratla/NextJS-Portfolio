@@ -3,6 +3,8 @@
 import Image from "next/legacy/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
+import GithubLogo from "@/public/images/icons8-github.svg";
 
 interface ProjectProps {
   title: string;
@@ -64,22 +66,37 @@ export default function Project({
             </span>
           ))}
         </p>
-        <div className="pt-4 flex md:mx-auto lg:mx-0">
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <a
-              className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-cyan-500 hover:to-teal-500"
-              href={url_repo}
-            >
-              Source
-            </a>
+        <div className="pt-4 flex items-center md:mx-auto lg:mx-0">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-cyan-500 hover:to-teal-500"
+          >
+            <Link href={url_repo} className="flex items-center">
+              <Image src={GithubLogo} alt="logo" width={20} height={20} />
+              <span className="pl-1">Source</span>
+            </Link>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }}>
-            <a
-              className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 ml-6 hover:from-cyan-500 hover:to-teal-500"
-              href={live_link}
-            >
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 ml-6 hover:from-cyan-500 hover:to-teal-500"
+          >
+            <Link href={live_link} className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5 pr-1"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                />
+              </svg>
               View
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

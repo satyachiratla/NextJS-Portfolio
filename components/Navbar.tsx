@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className="fixed z-50 top-0 left-0 right-0 flex justify-between lg:pr-28 lg:pl-16 items-center py-4 pr-4 backdrop-blur">
       <div className="relative h-10 w-60">
-        <Image src={Logo} alt="logo" layout="fill" objectFit="cover" />
+        <Image src={Logo} alt="logo" layout="fill" objectFit="cover" priority />
       </div>
       <ul className="flex items-center">
         <li onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="mr-8">
