@@ -16,30 +16,30 @@ const projects: Projects[] = [
     title: "Food Ordering App",
     description:
       "The successful creation of a stunning restaurant website using NextJS and the power of Tailwind CSS. One of the most exciting aspects of this project was implementing the CRUD operations.",
-    image: "/images/foodapp.jpg",
+    image: "/images/foodapp.png",
     url_repo: "https://github.com/satyachiratla/NextJS-Food-App",
     technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "Next Auth,", "Framer Motion,", "MongoDB"],
     live_link: "https://peddadameals.vercel.app/",
   },
   {
     id: 2,
+    title: "Portfolio",
+    description:
+      "This portfolio project showcases my skills and works in an elegant design with a user-friendly interface. Experience smooth transitions powered by Framer Motion, while toggling between a stylish dark mode and a vibrant light mode. Explore my projects and journey through a delightful scroll experience.",
+    image: "/images/portfolio.png",
+    url_repo: "https://github.com/satyachiratla/NextJS-Portfolio",
+    technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "Framer Motion"],
+    live_link: "https://satyasportfolio.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Tournament App",
     description:
       "Fully built with NextJS and its core features like page pre-rendering. Once visiting this page the pages are pre-rendered so that the pages are loaded quickly as possible.",
     image: "/images/tournament.png",
     url_repo: "https://github.com/satyachiratla/tournament_app",
-    technologies: ["NextJS,", "ReactJS,", "Tailwind CSS", "MongoDB"],
+    technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "MongoDB"],
     live_link: "https://vivekstournament.vercel.app/newteam",
-  },
-  {
-    id: 3,
-    title: "Food App",
-    description:
-      "Build a Dynamic Single Page Application by managing the state with context API and integrated the backend with NodeJS, and ExpressJS.",
-    image: "/images/foodorder.png",
-    url_repo: "https://github.com/satyachiratla/food_app",
-    technologies: ["ReactJS,", "Firebase,", "Redux"],
-    live_link: "https://peddadameals.netlify.app/",
   },
 ];
 

@@ -48,7 +48,7 @@ export default function Project({
         transitionSpeed={2000}
         gyroscope={false}
       >
-        <div className="relative w-full rounded-lg h-48 md:w-96 md:h-56 md:hover:shadow-xl dark:md:hover:shadow-slate-600 dark:md:hover:shadow ">
+        <div className="relative w-full border border-gray-700 rounded-lg h-48 md:w-96 md:h-56 md:hover:shadow-xl dark:md:hover:shadow-slate-600 dark:md:hover:shadow ">
           <Image
             src={image}
             alt={title}
