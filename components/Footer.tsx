@@ -5,10 +5,12 @@ import insta from "@/public/images/insta.png";
 import linkedin from "@/public/images/linkedin.png";
 import github from "@/public/images/github.png";
 import { motion } from "framer-motion";
+import ScrollArrow from "./ScrollArrow";
 
 export default function Footer() {
   return (
     <section>
+      <ScrollArrow />
       <div className="flex flex-row items-center justify-center px-8 py-4">
         <motion.div whileHover={{ scale: 1.1 }} className="mx-2">
           <a
