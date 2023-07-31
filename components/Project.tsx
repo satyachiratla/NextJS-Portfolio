@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 import GithubLogo from "@/public/images/icons8-github.svg";
+import Tilt from "react-parallax-tilt";
 
 interface ProjectProps {
   title: string;
@@ -39,15 +40,24 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="my-4 lg:my-8 first:pt-0 flex flex-col md:items-center lg:items-start justify-center lg:flex-row"
     >
-      <div className="relative w-full  h-48 md:w-96 md:h-56 md:hover:shadow-xl dark:md:hover:shadow-slate-600 dark:md:hover:shadow ">
-        <Image
-          src={image}
-          alt={title}
-          layout="fill"
-          objectFit="fill"
-          className="mx-auto rounded-md"
-        />
-      </div>
+      <a href={live_link}>
+      <Tilt
+        tiltMaxAngleX={8}
+        tiltMaxAngleY={8}
+        scale={1}
+        transitionSpeed={2000}
+        gyroscope={false}
+      >
+        <div className="relative w-full rounded-lg h-48 md:w-96 md:h-56 md:hover:shadow-xl dark:md:hover:shadow-slate-600 dark:md:hover:shadow ">
+          <Image
+            src={image}
+            alt={title}
+            layout="fill"
+            objectFit="fill"
+            className="mx-auto rounded-md"
+          />
+        </div>
+      </Tilt></a>
       <div className="flex flex-col py-4 lg:py-0 lg:ml-12 ">
         <h3 className="text-2xl text-teal-600 font-medium md:text-center lg:text-start">
           {title}

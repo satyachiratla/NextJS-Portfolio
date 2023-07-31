@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Inter:wght@500&family=Lunasima&family=Nunito:wght@500&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Inter:wght@500&family=Lunasima&family=Nunito:wght@500&family=Raleway&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.perspective {
+  perspective: 500px;
+}
