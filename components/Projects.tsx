@@ -23,13 +23,13 @@ const projects: Projects[] = [
   },
   {
     id: 2,
-    title: "Cricbuzz",
+    title: "Tournament App",
     description:
       "Fully built with NextJS and its core features like page pre-rendering. Once visiting this page the pages are pre-rendered so that the pages are loaded quickly as possible.",
-    image: "/images/cricbuzz.png",
-    url_repo: "https://github.com/satyachiratla/NextJS-Food-App",
-    technologies: ["NextJS,", "ReactJS,", "Material UI"],
-    live_link: "https://peddadameals.vercel.app/",
+    image: "/images/tournament.png",
+    url_repo: "https://github.com/satyachiratla/tournament_app",
+    technologies: ["NextJS,", "ReactJS,", "Tailwind CSS", "MongoDB"],
+    live_link: "https://vivekstournament.vercel.app/newteam",
   },
   {
     id: 3,
@@ -37,9 +37,9 @@ const projects: Projects[] = [
     description:
       "Build a Dynamic Single Page Application by managing the state with context API and integrated the backend with NodeJS, and ExpressJS.",
     image: "/images/foodorder.png",
-    url_repo: "https://github.com/satyachiratla/NextJS-Food-App",
+    url_repo: "https://github.com/satyachiratla/food_app",
     technologies: ["ReactJS,", "Firebase,", "Redux"],
-    live_link: "https://peddadameals.vercel.app/",
+    live_link: "https://peddadameals.netlify.app/",
   },
 ];
 

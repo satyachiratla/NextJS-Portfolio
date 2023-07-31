@@ -56,7 +56,7 @@ export default function Navbar() {
           )}
         </li>
         <motion.li initial={{ y: "-100vh" }} animate={{ y: 0 }} whileHover={{ scale: 1.2 }}>
-          <a href="https://drive.google.com/file/d/1wSehTampGP8huqFP15z1Y7z9Rxlca4k0/view?usp=sharing" className="text-white tracking-wide bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-500 hover:to-cyan-500 rounded-md px-4 py-2 cursor-pointer">
+          <a href="https://drive.google.com/file/d/1QhiQ1U-hGHlg0F5T9sJ-Lg6pMhkoRAyV/view?usp=drive_link" className="text-white tracking-wide bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-500 hover:to-cyan-500 rounded-md px-4 py-2 cursor-pointer">
             Resume
           </a>
         </motion.li>
