@@ -25,14 +25,14 @@ export default function ScrollArrow() {
 
   return (
     <>
-    { backToTop && <button onClick={scrollUp} className="bg-gray-800 rounded-full fixed bottom-10 right-10 p-3 animate-bounce">
+    { backToTop && <button onClick={scrollUp} className="bg-gray-800 text-white rounded-full fixed bottom-10 right-10 p-3 animate-bounce">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-6 h-6"
+        className="w-6 h-6 "
       >
         <path
           strokeLinecap="round"

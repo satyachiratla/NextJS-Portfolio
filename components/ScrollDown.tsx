@@ -1,22 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
 
 const ScrollArrow = () => {
   const [isProjectsSection, setIsProjectsSection] = useState(true);
   const [showArrow, setShowArrow] = useState(true);
-  const controls = useAnimation()
-
-  useEffect(() => {
-    controls.start({
-        opacity: [0, 1],
-        transition: {
-            delay: 0.9,
-            duration: 0.2,
-          }
-    })
-  }, [controls])
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -53,10 +41,9 @@ const ScrollArrow = () => {
   return (
     <>
       {showArrow && (
-        <motion.button
+        <button
           className="fixed bottom-10 right-10 animate-bounce w-12 h-12 bg-gray-800 rounded-full text-white flex justify-center items-center"
           onClick={handleArrowClick}
-          animate={controls}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +59,7 @@ const ScrollArrow = () => {
               d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"
             />
           </svg>
-        </motion.button>
+        </button>
       )}
     </>
   );

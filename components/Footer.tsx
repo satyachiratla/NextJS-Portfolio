@@ -1,57 +1,39 @@
 "use client";
 
-import Image from "next/image";
-import insta from "@/public/images/insta.png";
-import linkedin from "@/public/images/linkedin.png";
-import github from "@/public/images/github.png";
 import { motion } from "framer-motion";
 import ScrollArrow from "./ScrollArrow";
+import { BiLogoGmail } from "react-icons/bi";
+import { BiLogoGithub } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
 
 export default function Footer() {
   return (
     <section>
       <ScrollArrow />
-      <div className="flex flex-row items-center justify-center px-8 py-4">
-        <motion.div whileHover={{ scale: 1.1 }} className="mx-2">
+      <div className="flex flex-row items-center justify-center mx-8 my-4">
+        <motion.div whileHover={{ scale: 1.1 }} className="mx-3">
           <a
-            href="https://www.instagram.com/v.i.v.e.k_c.h.o.w.d.a.r.y/"
+            // href="https://www.instagram.com/v.i.v.e.k_c.h.o.w.d.a.r.y/"
+            href="mailto:satyachiratla77@gmail.com"
             title="instagram profile"
-            className="mx-2"
           >
-            <Image
-              src={insta}
-              alt="instagram"
-              width={30}
-              className="dark:bg-white rounded-full"
-            />
+            <BiLogoGmail className="w-6 h-6" />
           </a>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} className="mx-2">
+        <motion.div whileHover={{ scale: 1.1 }} className="mx-3">
           <a
             href="https://github.com/satyachiratla"
             title="github profile"
-            className="mx-2"
           >
-            <Image
-              src={github}
-              alt="github"
-              width={30}
-              className="dark:bg-white rounded-full"
-            />
+            <BiLogoGithub className="w-6 h-6" />
           </a>
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} className="mx-2">
+        <motion.div whileHover={{ scale: 1.1 }} className="mx-3">
           <a
             href="https://www.linkedin.com/in/satya-chiratla-378b31165/"
             title="linkedin profile"
-            className="mx-2"
           >
-            <Image
-              src={linkedin}
-              alt="linkedin"
-              width={30}
-              className="dark:bg-white rounded-full"
-            />
+            <BiLogoLinkedin className="w-6 h-6" />
           </a>
         </motion.div>
       </div>
