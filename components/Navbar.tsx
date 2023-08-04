@@ -3,17 +3,17 @@
 import { useTheme } from "next-themes";
 import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
-import Logo from '@/public/images/logo.png'
+import Logo from "@/public/images/logo.png";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), [])
+  useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
@@ -22,7 +22,10 @@ export default function Navbar() {
         <Image src={Logo} alt="logo" layout="fill" objectFit="cover" priority />
       </div>
       <ul className="flex items-center">
-        <li onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="mr-8">
+        <li
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          className="mr-8"
+        >
           {theme !== "dark" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +58,15 @@ export default function Navbar() {
             </svg>
           )}
         </li>
-        <motion.li initial={{ y: "-100vh" }} animate={{ y: 0 }} whileHover={{ scale: 1.2 }}>
-          <a href="https://drive.google.com/file/d/1QhiQ1U-hGHlg0F5T9sJ-Lg6pMhkoRAyV/view?usp=drive_link" className="text-white tracking-wide bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-500 hover:to-cyan-500 rounded-md px-4 py-2 cursor-pointer">
+        <motion.li
+          initial={{ y: "-100vh" }}
+          animate={{ y: 0 }}
+          whileHover={{ scale: 1.2 }}
+        >
+          <a
+            href="https://drive.google.com/file/d/1QhiQ1U-hGHlg0F5T9sJ-Lg6pMhkoRAyV/view?usp=drive_link"
+            className="text-white tracking-wide bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-500 hover:to-cyan-500 rounded-md px-4 py-2 cursor-pointer"
+          >
             Resume
           </a>
         </motion.li>

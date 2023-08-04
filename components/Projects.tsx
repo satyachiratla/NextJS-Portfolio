@@ -18,7 +18,7 @@ const projects: Projects[] = [
       "The successful creation of a stunning restaurant website using NextJS and the power of Tailwind CSS. One of the most exciting aspects of this project was implementing the CRUD operations.",
     image: "/images/foodapp.png",
     url_repo: "https://github.com/satyachiratla/NextJS-Food-App",
-    technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "Next Auth,", "Framer Motion,", "MongoDB"],
+    technologies: ["NextJS,", "ReactJS,", "Redux,", "Tailwind CSS,", "Next Auth,", "Framer Motion,", "MongoDB"],
     live_link: "https://peddadameals.vercel.app/",
   },
   {

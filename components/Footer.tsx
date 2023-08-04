@@ -15,7 +15,7 @@ export default function Footer() {
           <a
             // href="https://www.instagram.com/v.i.v.e.k_c.h.o.w.d.a.r.y/"
             href="mailto:satyachiratla77@gmail.com"
-            title="instagram profile"
+            title="gmail"
           >
             <BiLogoGmail className="w-6 h-6" />
           </a>
