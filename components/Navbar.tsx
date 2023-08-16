@@ -66,6 +66,7 @@ export default function Navbar() {
           <a
             href="https://drive.google.com/file/d/1QhiQ1U-hGHlg0F5T9sJ-Lg6pMhkoRAyV/view?usp=drive_link"
             className="text-white tracking-wide bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-teal-500 hover:to-cyan-500 rounded-md px-4 py-2 cursor-pointer"
+            target="_blank"
           >
             Resume
           </a>

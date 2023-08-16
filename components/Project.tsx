@@ -40,7 +40,7 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="my-4 lg:my-8 first:pt-0 flex flex-col md:items-center lg:items-start justify-center lg:flex-row"
     >
-      <a href={live_link}>
+      <a href={live_link} target="_blank">
       <Tilt
         tiltMaxAngleX={8}
         tiltMaxAngleY={8}
@@ -81,16 +81,19 @@ export default function Project({
             whileHover={{ scale: 1.1 }}
             className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-cyan-500 hover:to-teal-500"
           >
-            <Link href={url_repo} className="flex items-center">
+            <Link href={url_repo} legacyBehavior>
+              <a target="_blank" className="flex items-center">
               <Image src={GithubLogo} alt="logo" width={20} height={20} />
               <span className="pl-1">Source</span>
+              </a>
             </Link>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
             className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 ml-6 hover:from-cyan-500 hover:to-teal-500"
           >
-            <Link href={live_link} className="flex items-center">
+            <Link href={live_link} legacyBehavior>
+            <a target="_blank" className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -106,6 +109,7 @@ export default function Project({
                 />
               </svg>
               Visit
+              </a>
             </Link>
           </motion.div>
         </div>
