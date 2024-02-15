@@ -18,8 +18,16 @@ const projects: Projects[] = [
       "The successful creation of a stunning restaurant website using NextJS and the power of Tailwind CSS. One of the most exciting aspects of this project was implementing the CRUD operations.",
     image: "/images/foodapp.png",
     url_repo: "https://github.com/satyachiratla/NextJS-Food-App",
-    technologies: ["NextJS,", "ReactJS,", "Redux,", "Tailwind CSS,", "Next Auth,", "Framer Motion,", "MongoDB"],
-    live_link: "https://peddadameals.vercel.app/",
+    technologies: [
+      "NextJS,",
+      "ReactJS,",
+      "Redux,",
+      "Tailwind CSS,",
+      "Next Auth,",
+      "Framer Motion,",
+      "MongoDB",
+    ],
+    live_link: "https://mealapp.isatya.dev/",
   },
   {
     id: 2,
@@ -29,7 +37,7 @@ const projects: Projects[] = [
     image: "/images/portfolio.png",
     url_repo: "https://github.com/satyachiratla/NextJS-Portfolio",
     technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "Framer Motion"],
-    live_link: "https://satyasportfolio.vercel.app/",
+    live_link: "https://www.isatya.dev/",
   },
   {
     id: 3,
@@ -39,7 +47,7 @@ const projects: Projects[] = [
     image: "/images/tournament.png",
     url_repo: "https://github.com/satyachiratla/tournament_app",
     technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "MongoDB"],
-    live_link: "https://vivekstournament.vercel.app/newteam",
+    live_link: "https://tournamentapp.isatya.dev/newteam",
   },
 ];
 
