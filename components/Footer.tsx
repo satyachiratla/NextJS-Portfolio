@@ -41,7 +41,7 @@ export default function Footer() {
       <div className="text-center mb-8">
         <p className="text-lg tracking-wide font-lunasima">
           {" "}
-          Made with ❤️ by Vivek
+          Made with ❤️ by Satya
         </p>
         <p className=""> © {new Date().getFullYear()} Reserved</p>
       </div>
