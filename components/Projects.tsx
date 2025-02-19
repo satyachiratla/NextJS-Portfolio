@@ -27,17 +27,17 @@ const projects: Projects[] = [
       "Framer Motion,",
       "MongoDB",
     ],
-    live_link: "https://mealapp.isatya.dev/",
+    live_link: "https://peddadameals.vercel.app/",
   },
   {
     id: 2,
     title: "Portfolio",
     description:
       "This portfolio project showcases my skills and works in an elegant design with a user-friendly interface. Experience smooth transitions powered by Framer Motion, while toggling between a stylish dark mode and a vibrant light mode. Explore my projects and journey through a delightful scroll experience.",
-    image: "/images/portfolio.png",
+    image: "/images/portfolio-two.png",
     url_repo: "https://github.com/satyachiratla/NextJS-Portfolio",
     technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "Framer Motion"],
-    live_link: "https://www.isatya.dev/",
+    live_link: "https://satyasportfolio.vercel.app/",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const projects: Projects[] = [
     image: "/images/tournament.png",
     url_repo: "https://github.com/satyachiratla/tournament_app",
     technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "MongoDB"],
-    live_link: "https://tournamentapp.isatya.dev/newteam",
+    live_link: "https://tournament-1pcqwm52d-satyachiratla.vercel.app/newteam",
   },
 ];
 
