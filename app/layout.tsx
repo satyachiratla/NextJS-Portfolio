@@ -3,7 +3,6 @@ import "./globals.css";
 import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Providers from "./providers";
-import ReduxProvider from "@/components/ReduxProvider";
 
 export const metadata: Metadata = {
   title: "Satya Chiratla",
@@ -21,17 +20,15 @@ export default function RootLayout({
         className="dark:bg-gray-900 bg-slate-100"
         suppressHydrationWarning={true}
       >
-        <ReduxProvider>
-          <Providers>
-            <header>
-              <Navbar />
-            </header>
-            {children}
-            <footer id="contact">
-              <Footer />
-            </footer>
-          </Providers>
-        </ReduxProvider>
+        <Providers>
+          <header>
+            <Navbar />
+          </header>
+          {children}
+          <footer id="contact">
+            <Footer />
+          </footer>
+        </Providers>
       </body>
     </html>
   );
