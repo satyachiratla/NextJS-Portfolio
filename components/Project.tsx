@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
@@ -52,9 +52,9 @@ export default function Project({
           <Image
             src={image}
             alt={title}
-            layout="fill"
-            objectFit="fill"
-            className="mx-auto rounded-md"
+            fill
+            sizes="(min-width: 768px) 384px, 100vw"
+            className="mx-auto rounded-md object-fill"
           />
         </div>
       </Tilt></a>
@@ -81,19 +81,26 @@ export default function Project({
             whileHover={{ scale: 1.1 }}
             className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-cyan-500 hover:to-teal-500"
           >
-            <Link href={url_repo} legacyBehavior>
-              <a target="_blank" className="flex items-center">
+            <Link
+              href={url_repo}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
               <Image src={GithubLogo} alt="logo" width={20} height={20} />
               <span className="pl-1">Source</span>
-              </a>
             </Link>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
             className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 ml-6 hover:from-cyan-500 hover:to-teal-500"
           >
-            <Link href={live_link} legacyBehavior>
-            <a target="_blank" className="flex items-center">
+            <Link
+              href={live_link}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -109,7 +116,6 @@ export default function Project({
                 />
               </svg>
               Visit
-              </a>
             </Link>
           </motion.div>
         </div>
