@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/legacy/image";
-import Profile from "@/public/images/IMG_1573.jpg";
+import Image from "next/image";
+import Profile from "@/public/images/profile-updated.jpeg";
 import { motion } from "framer-motion";
 
 const imageVariants = {
@@ -65,10 +65,10 @@ export default function About() {
           <Image
             src={Profile}
             alt="profile-image"
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="256px"
             priority
-            className="relative z-40 mx-auto rounded-full"
+            className="relative z-40 mx-auto rounded-full object-cover"
           />
         </motion.div>
         <div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Logo from "@/public/images/logo.png";
 import { motion } from "framer-motion";
@@ -10,7 +10,11 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setMounted(true));
+
+    return () => cancelAnimationFrame(frame);
+  }, []);
   if (!mounted) {
     return null;
   }
@@ -18,7 +22,14 @@ export default function Navbar() {
   return (
     <nav className="fixed z-50 top-0 left-0 right-0 flex justify-between lg:pr-28 lg:pl-16 items-center py-4 pr-4 backdrop-blur">
       <div className="relative h-10 w-60">
-        <Image src={Logo} alt="logo" layout="fill" objectFit="cover" priority />
+        <Image
+          src={Logo}
+          alt="logo"
+          fill
+          sizes="240px"
+          priority
+          className="object-cover"
+        />
       </div>
       <ul className="flex items-center">
         <li
