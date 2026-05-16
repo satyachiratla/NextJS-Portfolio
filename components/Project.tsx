@@ -12,7 +12,7 @@ interface ProjectProps {
   description: string;
   image: string;
   url_repo: string;
-  technologies: [string];
+  technologies: string[];
   live_link: string;
 }
 

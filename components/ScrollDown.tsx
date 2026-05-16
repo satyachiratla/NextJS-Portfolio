@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 
 const ScrollArrow = () => {
-  const [isProjectsSection, setIsProjectsSection] = useState(true);
+  const [nextSection, setNextSection] = useState<"experience" | "projects" | "contact">(
+    "experience"
+  );
   const [showArrow, setShowArrow] = useState(true);
 
   const scrollToSection = (sectionId: string) => {
@@ -15,12 +17,14 @@ const ScrollArrow = () => {
   };
 
   const handleArrowClick = () => {
-    if (isProjectsSection) {
-      scrollToSection("projects");
-      setIsProjectsSection(false);
+    scrollToSection(nextSection);
+
+    if (nextSection === "experience") {
+      setNextSection("projects");
+    } else if (nextSection === "projects") {
+      setNextSection("contact");
     } else {
-      scrollToSection("contact");
-      setIsProjectsSection(true);
+      setNextSection("experience");
     }
   };
 

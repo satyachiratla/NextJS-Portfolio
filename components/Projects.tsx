@@ -39,16 +39,6 @@ const projects: Projects[] = [
     technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "Framer Motion"],
     live_link: "https://satyasportfolio.vercel.app/",
   },
-  {
-    id: 3,
-    title: "Tournament App",
-    description:
-      "Fully built with NextJS and its core features like page pre-rendering. Once visiting this page the pages are pre-rendered so that the pages are loaded quickly as possible.",
-    image: "/images/tournament.png",
-    url_repo: "https://github.com/satyachiratla/tournament_app",
-    technologies: ["NextJS,", "ReactJS,", "Tailwind CSS,", "MongoDB"],
-    live_link: "https://tournament-1pcqwm52d-satyachiratla.vercel.app/newteam",
-  },
 ];
 
 export default function Projects() {
@@ -58,7 +48,7 @@ export default function Projects() {
         Projects
       </h1>
       <ul className="mt-8 flex flex-col justify-center items-center">
-        {projects.map((project: any): any => (
+        {projects.map((project) => (
           <Project
             key={project.id}
             title={project.title}

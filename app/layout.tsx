@@ -7,7 +7,7 @@ import DatadogInit from "@/components/DatadogInit";
 
 export const metadata: Metadata = {
   title: "Satya Chiratla",
-  description: "Frontend Developer",
+  description: "Software Engineer",
 };
 
 export default function RootLayout({

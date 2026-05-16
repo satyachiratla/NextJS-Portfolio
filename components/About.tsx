@@ -86,7 +86,7 @@ export default function About() {
             animate="visible"
             className="text-2xl py-2"
           >
-            Frontend Developer
+            Software Engineer
           </motion.h3>
           <motion.p
             variants={bioVariants}
@@ -94,26 +94,28 @@ export default function About() {
             animate="visible"
             className="text-gray-800 dark:text-gray-300 font-raleway text-base leading-8 py-5 mx-auto md:max-w-md lg:max-w-xl"
           >
-            Hello I am{" "}
+            Hello, I am{" "}
             <span className="bg-gradient-to-r font-lunasima font-semibold from-teal-500 to-cyan-500 bg-clip-text text-transparent">
               Satya Chiratla
             </span>
-            , A highly motivated individual passionate about coding and
-            technology. With a Bachelor&apos;s degree in Electronics and
-            Communication Engineering and over 2 years of industry experience, I
-            excel in crafting responsive and accessible web applications.{" "}
+            , a Software Engineer specializing in React JS, React Native, and
+            Next JS. I currently build high-impact healthcare mobile features at
+            Optum while also developing AI-driven automation tools for release
+            risk analysis and developer workflows.{" "}
             <br></br>
-            The technologies I knew are{" "}
+            My work spans responsive interfaces, reusable component systems,
+            performance optimization, API migrations, RTK Query data layers, and
+            production monitoring with Datadog. I enjoy turning complex product
+            and engineering problems into reliable, accessible, and maintainable
+            user experiences.
+            <br></br>
+            Core technologies I work with include{" "}
             <span className="bg-gradient-to-r font-lunasima font-semibold from-teal-500 to-cyan-500 bg-clip-text text-transparent">
-              Html5, CSS3, JavaScript, NextJS, ReactJs, Redux, SQL, MongoDB,
-              Python and NodeJs
+              JavaScript, TypeScript, React JS, React Native, Next JS, Redux,
+              Tailwind CSS, Python, MySQL, Firestore, RAG systems, and CI/CD
+              workflows
             </span>
-            . I create responsive websites that are displayed on all devices
-            desktops and mobiles. I have curious to learn FullStack and many
-            more technologies.
-            <br></br>
-            Also, I have worked hard in my education and now its time to put
-            them into my career.
+            .
           </motion.p>
         </div>
       </motion.section>

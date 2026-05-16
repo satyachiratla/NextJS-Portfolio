@@ -3,6 +3,7 @@
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import ScrollDown from "@/components/ScrollDown";
+import WorkExperience from "@/components/WorkExperience";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -12,8 +13,11 @@ export default function Home() {
   return (
     <main className="mt-20 px-8">
       <About />
+      <div id="experience">
+        <WorkExperience />
+      </div>
       <div id="projects">
-      <Projects />
+        <Projects />
       </div>
       <ScrollDown />
     </main>
